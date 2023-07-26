@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.mainpage{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    background: url('https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F482241%2Fgettyimages-826552082.jpg')  center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(251, 253, 255, 0.845) ;
+    border-radius: 20px;
+} 
+
+h1 {
+    margin: 16px auto;
+    text-align: center;
+    font-size: 40px;
+}
+form{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.form-group input[type="submit"] {
+    background-color: #a02f42;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.company-info {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 2rem;
+    background-color: #7cc6d8;
+}
+.company-info p {
+    text-align: justify;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #e3faff;
+    color: #8b7a7a;
+}
+.company-info h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+.plot-image {
+    text-align: center;
+    margin-bottom: 2px;
+    background-color: #e3faff;
+}

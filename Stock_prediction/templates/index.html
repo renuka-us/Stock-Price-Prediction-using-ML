@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="static\styles\style.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="mainpage">
+            <div class="container">
+                <h1>Stock Price Prediction</h1>
+                
+                <form method="POST" action="/" class="form">
+                    <div class="form-group">
+                        <label for="stock-code">Stock Code:</label> </br>
+                        <input type="text" id="stock-code" name="stock_code" placeholder="Enter stock code" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="forecast-days">Number of Forecasting Days:</label> </br>
+                        <input type="number" id="forecast-days" name="days" placeholder="Enter number of days" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="company-info">
+            {% if registered_name %}
+            <h2>{{ registered_name }}</h2>
+            {% endif %}
+            {% if description %}
+            <p>{{ description }}</p>
+            {% endif %}
+        </div>
+        
+        <div class="plot-image">
+            {% if plot_image_1_month %}
+            <img src="data:image/png;base64,{{ plot_image_1_month }}" alt="Stock Price Trend">
+            {% endif %}
+        </div> 
+        <div class="plot-image">
+            {% if plot_image_6_months %}
+            <img src="data:image/png;base64,{{ plot_image_6_months }}" alt="Stock Price Trend">
+            {% endif %}
+        </div>
+        <div class="plot-image">
+            {% if plot_image_12_months %}
+            <img src="data:image/png;base64,{{ plot_image_12_months }}" alt="Stock Price Trend">
+            {% endif %}
+        </div>
+        <div class="plot-image">
+            {% if plot_image_forecast %}
+            <img src="data:image/png;base64,{{ plot_image_forecast }}" alt="Stock Price Trend">
+            {% endif %}
+        </div>
+        
+    </div>
+</body>
+</html>
